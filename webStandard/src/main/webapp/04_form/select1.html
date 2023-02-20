@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CHAP04-select1</title>
+</head>
+<style type="text/css">
+	body {
+		width: 800px;
+		background-color: #F0F0FC;
+	}
+	
+	form {
+		margin-bottom: 20px;
+	}
+	
+	form legend{
+		font-size: 15px;
+		font-weight: 600;
+	}
+	
+	.reg{
+		font-size: 14px;
+		width: 90px;
+		color: #336655;
+		font-weight: bold;
+		float: left;
+		text-align: center;
+	}
+	
+	form ul li{
+		list-style: none;
+		margin: 15px 10px 5px;
+		font-size: 14px;
+	}
+</style>
+<body>
+	<h1>여름방학 특강 신청</h1>
+	<form action="">
+		<fieldset>
+			<ul>
+				<li >
+					<label class = "reg" for = "id">학번</label>
+					<input type ="text" id = "id">
+				</li>
+				<li>
+					<label class = "reg" for = "name">이름</label>
+					<input type ="text" id = "name">
+				</li>
+				<li>
+					<label class="reg">학과(*)</label>
+					<select id="class" name="class" required>
+						<option value="archi">건축공학과</option>
+						<option value="econ">경제학과</option>
+						<option value="busi">경영학과</option>
+						<option value="computer">컴퓨터공학과</option>
+						<option value="chemi">화학공학과</option>
+						<option value="mosen">무슨공학과</option>
+						<option value="uzzul">어쩔공학과</option>
+						<option value="default" selected>선택하세요</option>
+					</select>
+				</li>
+			</ul>
+		</fieldset>
+	</form>
+</body>
+</html>
