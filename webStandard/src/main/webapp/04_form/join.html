@@ -17,10 +17,18 @@
 	}
 	
 	label {
-		display : inline-block;
 		width : 200px;
-		text-align: left;
+		text-align: right;
+		float: left;
+		margin-right: 15px;
 	}
+	
+	body h1{
+		display: grid;
+		align-items: center;
+		justify-content: center;
+	}
+	
 	
 	
 </style>
@@ -28,6 +36,7 @@
 
 <body>
 	<h1>Hi Stranger!</h1>
+	<hr>
 	<form action="">
 		<ul>
 			<li>
@@ -35,9 +44,9 @@
 				<input type = "text" id = "user_id" size = "10" minlength ="4" max length="15">
 				<small style = "color : red;"> 4~15자리 이내의 영문과 숫자</small>
 			</li>
-				<li><label>이메일:</label><input type = "email" id = "user_email"></li>
-				<li><label>비밀번호:</label><input type = "password" id = "user_pwd"></li>
-				<li><label>비밀번호 확인:</label><input type = "password" id = "check_pwd"></li>
+				<li><label>이메일</label><input type = "email" id = "user_email"></li>
+				<li><label>비밀번호</label><input type = "password" id = "user_pwd"></li>
+				<li><label>비밀번호 확인</label><input type = "password" id = "check_pwd"></li>
 				<li><input type = "submit" value = "회원가입"></li>
 		</ul>
 	</form>

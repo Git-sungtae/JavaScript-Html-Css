@@ -1,0 +1,112 @@
+body{
+	font: 14px "맑은 고딕";
+}
+
+.container{
+	width: 80%;
+	height: 100%;
+	padding: 10px;
+	margin: 0 auto;
+	background-color: #E0E0E0;
+}
+
+header{
+	width: 100%;
+	background-image: url("images/bg.png");
+	background-size: cover; 
+	background-position: left top;
+	text-align: center;
+	height: 400px;
+	
+}
+
+header h1{
+	font-size: 80px;
+	font-weight: bold;
+	color: white;
+}
+
+header h1 a{
+	text-decoration: none;
+}
+
+header h1 a:link{
+	color: inherit;
+}
+
+header h1 a:visited{
+	color: inherit;
+}
+
+header h2{
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+}
+
+nav{
+	background-color: gray;
+	height: 60px;
+	display: grid;
+}
+
+nav ul{
+	text-align: center;
+	justify-content: center;
+}
+
+nav ul li{
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline;
+	list-style-type: none;
+	margin-right: 50px;
+}
+
+nav ul li a{
+	text-decoration: none;
+}
+
+nav ul li a:visited{
+	text-decoration: none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	
+}
+
+article{
+	display: inline-block;
+	width: 70%;
+	min-height: 40%;
+}
+
+section{
+	display: grid;
+	vertical-align: top;
+	text-align: center;
+}
+
+section ul{
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+section ul li{
+	display: block;
+	list-style-type: none;
+	width: 170px;
+	text-align: left;
+}
+
+aside{
+	display: inline-block;
+	border-left: 1px solid gray;
+	width: 9%;
+	padding: 10px;
+	min-height: 100%;
+	vertical-align: top;	
+}
