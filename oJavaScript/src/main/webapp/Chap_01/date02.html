@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var d1 = new Date();
+	document.write("년 : " + d1.getFullYear()
+					//JavaScript에서 월은 0부터 시작
+				 + "<br>월 : " + (d1.getMonth()+1)
+				 + "<br>일 : " + d1.getDate()
+				 + "<br>요일 : " + d1.getDay());
+	var week = 0;
+	switch(d1.getDay()){
+		case 0:
+			week = "일";
+			break;
+		case 1:
+			week = "월";
+			break;
+		case 2:
+			week = "화";
+			break;
+		case 3:
+			week = "수";
+			break;
+		case 4:
+			week = "목";
+			break;						
+		case 5:
+			week = "금";
+			break;						
+		case 6:
+			week = "토";
+			break;						
+	}
+	document.write("<br>오늘은 " + week + "요일 입니다.")
+	
+	
+
+</script>
+</head>
+<body>
+	<h1>date02 : 년/월/일 요일 각각 가져오기</h1>
+
+</body>
+</html>
