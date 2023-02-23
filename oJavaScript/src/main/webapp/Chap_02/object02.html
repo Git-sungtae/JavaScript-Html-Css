@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+var person = {
+	name : "홍길동",
+	birthday : "030219",
+	pId : "1234567",
+
+	// pId와 생년월일을 합치는 function(메서드)을 만들 수 있다.	
+	fullId : function(){
+		return this.birthday + "-" +this.pId;
+	}
+}
+
+	// 생년월일과 개인 id를 합쳐서 주민번호 반환.
+	document.write("합친 메서드 호출 : " + person.fullId);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var banner = new Array();
+	//0~6 사이의 이미지를 배열에 입력
+	for(var i = 0; i < 7; i++){
+		banner[i] = "../images/" + i + ".jpg";
+	}
+	//math.random으로 임의의 수 가져옴
+	var ranNumber = Math.random()*7;
+	document.write("ranNumber = " + ranNumber);
+	//
+	var ran = Math.floor(ranNumber);
+	document.write("<img src = " + banner[ran] + ">");
+</script>
+</body>
+</html>

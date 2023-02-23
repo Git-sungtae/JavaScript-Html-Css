@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//var는 블록내에서 선언되어도 밖에서 전역변수처럼 사용 가능
+	var varName = "varname";
+	//let은 블록 내에서만 사용되고 사라짐(지역변수처럼 사용)
+	let letName = "letname";
+	const constName = "constname";
+	
+	//변수 재선언, 변수 재할당 모두 불가능 → 자바의 상수
+	constName = 600;
+	
+	// var는 재 선언 가능 , let은 재 선언 불가능
+	var varName = "varname2"; //재선언 가능!
+	/* let letName = "letname2"; */ //재선언 불가능!
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

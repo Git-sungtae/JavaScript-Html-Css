@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 	<h1>Switch</h1>
+	<h4>1~7사이 숫자를 입력하세요</h4>
+	<h4>1~7사이 아니면 ->잘못 입력하셨습니다 </h4>
+	<h4>isNaN면     ->숫자가 아닙니다    </h4>
+	<h4>1~7    사이면 ->Switch </h4>
+	<h6>1면 ->1 입력하셨습니다 , 색상 red </h6>
+	<h6>2면 ->2 입력하셨습니다 , 색상 orange </h6>
+	<h6>3면 ->3 입력하셨습니다 , 색상 yellow </h6>
+	<h6>4면 ->4 입력하셨습니다 , 색상 green </h6>
+	<h6>5면 ->5 입력하셨습니다 , 색상 blue </h6>
+	<h6>6면 ->6 입력하셨습니다 , 색상 navy </h6>
+	<h6>default면 ->7 입력하셨습니다 , 색상 violet </h6> -->
+	<div>
+		<button onclick="check()">1~7 입력</button>
+	</div>
+	
+	<div>
+		<button onclick=>입력결과보기</button>
+	</div>
+	
+	<div id = "result">
+	</div>
+
+</body>
+<script type="text/javascript">
+/* 	var value = prompt("1~7 사이 숫자 입력 ㄱ", "숫자 입력 ㄱㄱ");
+	
+	if(value >= 1 & value <= 7){
+		switch(value){
+			case '1': 
+				document.write("1 입력하였습니다.".fontcolor("red"));
+				break;
+			case '2': 
+				document.write("2 입력하였습니다.".fontcolor("orange"));
+				break;
+			case '3': 
+				document.write("3 입력하였습니다.".fontcolor("orange"));
+				break;
+			case '4': 
+				document.write("4 입력하였습니다.".fontcolor("orange"));
+				break;
+			case '5': 
+				document.write("5 입력하였습니다.".fontcolor("orange"));
+				break;
+			case '6': 
+				document.write("6 입력하였습니다.".fontcolor("orange"));
+				break;
+			case '7': 
+				document.write("7 입력하였습니다.".fontcolor("orange"));
+				break;
+		}		
+	} else if(isNaN(value)){
+		document.write("숫자 아님");
+	} else {
+		document.write("1~7 사이로"); 
+	}*/
+	
+	function check(){
+		var value = prompt("1~7 사이 숫자 입력 ㄱ", "숫자 입력 ㄱㄱ");
+		if (value >= 1 & value <= 7) {
+			var result = value;
+		} else if(isNaN(value)){
+			alert("숫자 아님");
+			var result = "숫자가 아님";
+		} else {
+			alert("1~7 사이로");
+			var result = "1~7 사이가 아님";
+		}
+	}
+	
+	function read() {
+		document.getElementById("result").textContent = result;
+	}
+	
+</script>
+</html>

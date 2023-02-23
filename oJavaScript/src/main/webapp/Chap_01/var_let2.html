@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var d = '5분';
+	let e = 'eee분';
+	document.write("문자d : " + d + "<br>");
+	document.write("문자d : " + e + "<br>");
+	function varTest() {
+		alert('varTest Click');
+		var x = 1;
+		if (true) {
+			x = 2;
+			alert("varTest2 x : " + x);
+		}
+		alert("varTest3 x : " + x);
+	}
+	
+	function letTest() {
+		alert('letTest Click');
+		let x = 1;
+		if (true) {
+			let x = 2;
+			alert("letTest2 x : " + x);
+		}
+		alert("letTest3 x : " + x);
+	}
+	
+</script>
+</head>
+<body>
+	<button onclick="varTest()">varTest</button>
+	<button onclick="letTest()">letTest</button>
+</body>
+</html>

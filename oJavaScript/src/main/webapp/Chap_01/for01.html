@@ -9,7 +9,9 @@
 		document.write(i + " : 값 --> " + arr[i] + "<p>");
 	}
 	var j = 0;
-	for (var i in arr) { //위와 같은 동작을 하는 for / in 문 - 향상형for문
+	//for each문도 사용 가능
+	//문법 : var v in (arr) a
+	for (var i in arr) { 
 		document.write(i + " : 값 --> " + arr[j] + "<p>");
 		j++;
 	}
