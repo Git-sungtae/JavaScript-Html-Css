@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
-	document.write("<h3> [ 정 수 형 ] </h3>");
+
+	document.getElementById('1').innerHTML += "<h3> [ 정 수 형 ] </h3>";
 	document.write("<h4>");
 	document.write("<hr> 1 0 진 수 ===> " + 10);
-	document.write("<br>&nbsp 8 진 수 ===> " + 012);
+	document.getElementById('2')('2').write("<br>&nbsp 8 진 수 ===> " + 012);
 	document.write("<br> 1 6 진 수 ===> " + 0xc);
 	document.write("</h4>");
 	//alert가 가장먼저실행됨
@@ -32,6 +33,11 @@
 </script>
 </head>
 <body>
+	<div id="1">
+	</div>
 	<h1>자료형-char</h1>
+	
+	<div id="2">
+	</div>
 </body>
 </html>
